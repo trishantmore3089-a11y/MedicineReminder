@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medicine Pill Reminder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>💊 Medicine Pill Reminder</h1>
+
+    <div id="currentTime"></div>
+
+    <input type="text" id="medName" placeholder="Enter Medicine Name">
+    <input type="time" id="medTime">
+
+    <select id="medDay">
+        <option value="Today">Today</option>
+        <option value="Tomorrow">Tomorrow</option>
+        <option value="Day After Tomorrow">Day After Tomorrow</option>
+    </select>
+
+    <button onclick="addMedicine()">Add Medicine</button>
+
+    <ul id="medicineList"></ul>
+
+    <button id="stopBtn" onclick="stopAlarm()" style="display:none;">Stop Alarm</button>
+</div>
+
+<audio id="alarmSound" src="alarm.mp3" preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
